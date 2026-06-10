@@ -5,6 +5,9 @@ export default function Home() {
         <h1 className="mb-4 text-5xl font-extrabold text-blue-600">
           Bienvenido a Pet Finder
         </h1>
+        <h2 className="mb-6 text-3xl font-semibold text-gray-800">
+          Hecho por Ronaldo Chavez
+        </h2>
         <p className="mb-8 text-xl text-gray-700">
           La plataforma dedicada a ayudar a las mascotas perdidas a volver a casa.
         </p>
