@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 // ── Icons (inline SVGs to avoid extra deps) ──────────────────────────────────
 const PawIcon = ({ className = "" }: { className?: string }) => (
@@ -460,9 +461,11 @@ export default function Home() {
               </button>
             </nav>
             <div className="flex items-center gap-2">
-              <button className="rounded-lg border border-teal-500 px-4 py-1.5 text-sm font-semibold text-teal-600 hover:bg-teal-50 transition-colors">
-                Iniciar sesión
-              </button>
+              <Link href="/login">
+                <button className="rounded-lg border border-teal-500 px-4 py-1.5 text-sm font-semibold text-teal-600 hover:bg-teal-50 transition-colors">
+                  Iniciar sesión
+                </button>
+              </Link>
               <button className="rounded-lg bg-teal-500 px-4 py-1.5 text-sm font-semibold text-white hover:bg-teal-600 transition-colors shadow-sm">
                 Registrarse
               </button>
